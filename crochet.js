@@ -1,6 +1,6 @@
 // PRODUCT DATA
 const products = [
-  { name: "Crochet Bag", category: "bag", image: "bag.jpeg", price: "₹399" },
+  { name: "Crochet Bag", category: "bag", image: "/bag.jpeg", price: "₹399" },
   { name: "Handmade Tote", category: "bag", image: "bag2.jpg", price: "₹70" },
   { name: "Crochet Top", category: "top", image: "top1.jpg", price: "₹70" },
   { name: "Evileye Keychain", category: "keychain", image: "evileye.jpeg", price: "₹80" },
@@ -41,4 +41,5 @@ function filterProducts(category) {
 
 // INITIAL LOAD
 displayProducts(products);
+
 
