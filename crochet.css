@@ -1,0 +1,448 @@
+/* ===== Header ===== */
+header {
+    background-color: plum; /* maroon */
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-family: 'Cursive', Arial, sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FFD700; /* gold */
+}
+
+/* ===== Hero Section ===== */
+/* ===== FRONT PAGE BACKGROUND ===== */
+
+/* ===== SOFT AESTHETIC HOME ===== */
+/* ===== HERO SECTION WITH SOFT GRADIENT ===== */
+.hero {
+    padding: 120px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #fffaf6, #f9e7d9); /* soft cream → light peach */
+}
+
+/* HERO TEXT */
+.hero-text h2 {
+    font-size: 42px;
+    color: #5a3e36; /* warm brown */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #5a3e36;
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.hero-text .btn {
+    background: #e8cfc3; /* soft peach button */
+    color: #5a3e36;
+    padding: 12px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    display: inline-block;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hero-text .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* HEADER NAVBAR */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fffaf6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: #5a3e36;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #5a3e36;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #e8cfc3;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    .hero {
+        padding: 100px 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-text h2 {
+        font-size: 32px;
+    }
+}
+
+
+/* ===== ABOUT PAGE ===== */
+.about-page {
+    padding: 80px 40px;
+    background: linear-gradient(135deg, #fffaf6, #f9e7d9); /* soft cream → light peach */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h2 {
+    font-size: 38px;
+    color: #5a3e36;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 17px;
+    color: #5a3e36;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+}
+
+
+/* ===== SOFT AESTHETIC PRODUCTS ===== */
+.products {
+    padding: 60px 40px;
+    background: #fffaf6; /* soft cream */
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 38px;
+    color: #5a3e36;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+/* Filter buttons */
+.filter-buttons .btn {
+    background: #e8cfc3;
+    color: #5a3e36;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.filter-buttons .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* Grid container */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Product card */
+.product-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1);
+}
+
+/* Image style */
+.product-card img {
+    width: 100%;
+    height: auto;       /* full image visible */
+    max-height: 250px;  /* prevents super tall images */
+    object-fit: contain; /* keeps entire image */
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+/* Product name */
+.product-card p {
+    font-size: 17px;
+    color: #5a3e36;
+    margin-bottom: 12px;
+}
+
+/* Order button */
+.product-card button {
+    background: #e8cfc3; 
+    color: #5a3e36;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* exactly 3 per row */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Responsive for tablets/mobile */
+@media screen and (max-width: 900px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .product-list {
+        grid-template-columns: 1fr; /* 1 per row on mobile */
+    }
+}
+/* ===== CONTACT PAGE ===== */
+.contact {
+    padding: 60px 40px;
+    background: #fffaf6;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 38px;
+    color: #5a3e36;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #e8cfc3;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    background: #e8cfc3;
+    color: #5a3e36;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .contact form {
+        width: 90%;
+    }
+}
+
+/* ===== HEADER / NAVBAR ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fffaf6; /* soft cream */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: #5a3e36;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar .nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #5a3e36;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar .nav-link:hover {
+    color: #e8cfc3;
+}
+
+/* RESPONSIVE NAVBAR */
+@media screen and (max-width: 700px) {
+    .navbar {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .navbar .nav-link {
+        margin: 10px 15px;
+    }
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: linear-gradient(135deg, #fffaf6, #f9e7d9);
+    padding: 40px 20px;
+    text-align: center;
+    color: #5a3e36;
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+.footer a {
+    color: #5a3e36;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #e8cfc3;
+}
+.btn {
+    background: #e8cfc3;
+    color: #5a3e36;
+    border-radius: 20px;
+    padding: 10px 22px;
+}
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #5a3e36;
+    margin: 8px 0;
+}
