@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | Akansha Crochet</title>
+  <link rel="stylesheet" href="crochet.css">
+</head>
+<body>
+
+<header class="header">
+  <h1 class="logo">Akansha Crochet</h1>
+  <nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="products.html" class="nav-link active">Products</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<section class="page products">
+  <h2>My Products</h2>
+
+  <!-- FILTER BUTTONS -->
+  <div class="filter-buttons">
+    <button onclick="filterProducts('all')" class="btn">All</button>
+    <button onclick="filterProducts('bag')" class="btn">Bags</button>
+    <button onclick="filterProducts('top')" class="btn">Tops</button>
+    <button onclick="filterProducts('keychain')" class="btn">Keychains</button>
+    <button onclick="filterProducts('flower')" class="btn">Flowers</button>
+  </div>
+
+  <!-- PRODUCTS -->
+  <div id="productList" class="product-list"></div>
+
+  <!-- ORDER SECTION -->
+  <div class="order-section">
+    <p class="delivery-note">🚚 Delivery charges will be applied separately</p>
+
+    <a href="https://www.instagram.com/crochet._15/"
+       target="_blank"
+       class="btn order-btn">
+      Order on Instagram
+    </a>
+  </div>
+</section>
+
+<script src="crochet.js"></script>
+</body>
+</html>
