@@ -446,3 +446,57 @@ header nav ul li a:hover {
     color: #5a3e36;
     margin: 8px 0;
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 36px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .hero-text h2 {
+    font-size: 36px;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h2 {
+    font-size: 32px;
+  }
+
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact form {
+    width: 90%;
+  }
+}
