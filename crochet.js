@@ -6,7 +6,10 @@ const products = [
   { name: "Evileye Keychain", category: "keychain", image: "images/evileye.jpeg", price: "₹80" },
   { name: "Sunflower Keychain", category: "keychain", image: "images/sunflower.jpeg", price: "₹70" },
   { name: "Cherry Keychain", category: "keychain", image: "images/cherry.jpeg", price: "₹70" },
-  { name: "Lily Flower", category: "flower", image: "images/lily.jpeg", price: "₹90" }
+  { name: "Lily Flower", category: "flower", image: "images/lily.jpeg", price: "₹90" },
+  { name: "Strawberry Keychain", category: "keychain", image: "images/Strawberry.jpeg", price: "₹70" },
+  { name: "Sunflower Hairrubber", category: "flower", image: "images/SunHairtie.jpeg", price: "₹70" }
+
 ];
 
 const productList = document.getElementById("productList");
