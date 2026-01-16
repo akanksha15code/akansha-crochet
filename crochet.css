@@ -255,9 +255,23 @@ h2 {
 }
 @media screen and (max-width: 600px) {
     .product-list {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .product-card img {
+        max-height: 180px;
+    }
+
+    .product-card h3 {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 14px;
     }
 }
+
 
 /* =======================
    CONTACT PAGE
@@ -327,4 +341,25 @@ h2 {
 
 .footer a:hover {
     color: #e8cfc3;
+}
+.order-section {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 999;
+}
+
+.order-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+    .order-section {
+        position: fixed;
+        bottom: 20px;
+        top: auto;
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
