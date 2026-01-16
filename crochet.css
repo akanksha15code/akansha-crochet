@@ -342,24 +342,24 @@ h2 {
 .footer a:hover {
     color: #e8cfc3;
 }
-.order-section {
-    position: fixed;
-    top: 100px;
-    right: 20px;
-    z-index: 999;
+.product-card {
+    position: relative;
 }
+
 
 .order-btn {
-    padding: 10px 16px;
+    display: inline-block;
+    margin-top: 10px;
     font-size: 14px;
+    padding: 8px 16px;
 }
 
+/* Mobile fix */
 @media screen and (max-width: 600px) {
-    .order-section {
-        position: fixed;
-        bottom: 20px;
-        top: auto;
-        right: 50%;
-        transform: translateX(50%);
+    .order-btn {
+        width: 100%;
+        text-align: center;
+        font-size: 13px;
+        padding: 8px 0;
     }
 }
