@@ -27,7 +27,9 @@ function displayProducts(items) {
       <img src="${product.image}">
       <h3>${product.name}</h3>
       <p class="price">${product.price}</p>
-       <a href="https://www.instagram.com/yourpage" class="btn order-btn">Order on Instagram</a>
+    <a href="https://www.instagram.com/crochet._15/" target="_blank" class="btn order-btn">
+    Order on Instagram
+  </a>
     `;
 
     productList.appendChild(div);

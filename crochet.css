@@ -342,16 +342,11 @@ h2 {
 .footer a:hover {
     color: #e8cfc3;
 }
-.product-card {
-    position: relative;
-}
-
-
-.order-btn {
-    display: inline-block;
+.product-card .order-btn {
     margin-top: 10px;
+    display: inline-block;
     font-size: 14px;
-    padding: 8px 16px;
+    padding: 8px 12px;
 }
 
 /* Mobile fix */
